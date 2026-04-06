@@ -3,98 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>交通事故治療なら にしむら整骨院</title>
+<title>保険外治療｜にしむら整骨院</title>
 
 <style>
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #f9f9f9;
 }
 
-/* ヘッダー */
-header {
-  background: #000;
-  color: #fff;
-  padding: 15px;
+/* 画像トップ */
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* タイトル */
+.title {
   text-align: center;
+  padding: 30px 20px 10px;
 }
 
-/* ファーストビュー */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f');
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-/* ボタン */
-.btn {
-  display: inline-block;
-  background: #ff6600;
-  color: #fff;
-  padding: 20px 30px;
-  margin-top: 20px;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  animation: pulse 1.5s infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* 点滅 */
-@keyframes pulse {
-  0% { transform: scale(1);}
-  50% { transform: scale(1.08);}
-  100% { transform: scale(1);}
+.title h1 {
+  font-size: 28px;
+  color: #333;
 }
 
 /* セクション */
 .section {
-  padding: 40px 20px;
+  padding: 30px 20px;
+}
+
+/* メニュー */
+.menu {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.menu img {
+  width: 100%;
+}
+
+.menu-content {
+  padding: 15px;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* CTA */
+.cta {
   text-align: center;
+  padding: 40px 20px;
 }
 
-.section h2 {
-  color: #ff9900;
-}
-
-/* ボックス */
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.box {
-  background: #f5f5f5;
-  padding: 18px;
+.btn {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  padding: 18px 28px;
+  text-decoration: none;
   border-radius: 10px;
   font-weight: bold;
-}
-
-/* 中間CTA */
-.mid-cta {
-  background: #fff3cd;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-/* 下CTA */
-.cta {
-  background: #000;
-  color: #fff;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-/* フッター */
-footer {
-  background: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
+  font-size: 18px;
 }
 
 /* 追従ボタン */
@@ -104,12 +93,12 @@ footer {
   width: 100%;
   background: #ff6600;
   text-align: center;
-  padding: 18px;
+  padding: 15px;
 }
 
 .fixed-btn a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -118,92 +107,80 @@ footer {
 
 <body>
 
-<header>
-<h1>にしむら整骨院</h1>
-<p>交通事故専門｜熊本エリア対応</p>
-</header>
-
-<!-- 上 -->
-<section class="hero">
-<h1>交通事故の痛み<br>自己負担0円で治療できます</h1>
-
-<p>むち打ち・腰痛・しびれに対応</p>
-
-<p style="margin-top:20px; font-weight:bold; font-size:18px;">
-🚨 事故後は早めの対応が重要です<br>
-今すぐご相談ください
-</p>
-
-<p style="margin-top:20px; font-weight:bold;">
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
-
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-無料でLINE相談する
-</a>
-</section>
-
-<section class="section">
-<h2>こんなお悩みありませんか？</h2>
-<div class="features">
-<div class="box">事故後から首が痛い（むち打ち）</div>
-<div class="box">病院では湿布だけで不安</div>
-<div class="box">保険の手続きが分からない</div>
+<!-- トップ画像 -->
+<div class="hero">
+<img src="hokengaisejyutu.jpg">
 </div>
-</section>
 
-<!-- 中 -->
-<section class="mid-cta">
-<h2>その悩み、今すぐ解決できます</h2>
-
-<p style="font-weight:bold;">
-LINEで簡単に無料相談OK
-</p>
-
-<p>
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
-
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-無料でLINE相談する
-</a>
-</section>
-
-<section class="section">
-<h2>当院が選ばれる理由</h2>
-<div class="features">
-<div class="box">✔ 自己負担0円で施術可能</div>
-<div class="box">✔ 保険会社とのやり取りサポート</div>
-<div class="box">✔ 弁護士紹介可能</div>
-<div class="box">✔ 国家資格保有スタッフ対応</div>
+<div class="title">
+<h1>保険外治療メニュー</h1>
+<p>症状に合わせて最適な施術をご提案します</p>
 </div>
-</section>
 
-<!-- 下 -->
-<section class="cta">
-<h2>まずは無料相談</h2>
+<div class="section">
 
-<p style="font-weight:bold; font-size:18px;">
-相談だけでもOKです
-</p>
+<!-- 超音波 -->
+<div class="menu">
+<img src="https://images.unsplash.com/photo-1580281658629-97fbbf24d6c6">
+<div class="menu-content">
+<div class="menu-title">超音波治療</div>
+<div class="menu-desc">
+炎症や痛みを早期改善。深部までアプローチし回復を促進します。
+</div>
+<div class="price">1回（7分） ¥700</div>
+</div>
+</div>
 
-<p>
-予約はこちらから<br>⬇︎⬇︎⬇︎
-</p>
+<!-- 指圧 -->
+<div class="menu">
+<img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6">
+<div class="menu-content">
+<div class="menu-title">指圧（15分）</div>
+<div class="menu-desc">
+筋肉のコリや疲労をしっかりほぐし、血流改善・リラックス効果。
+</div>
+<div class="price">¥1,200</div>
+</div>
+</div>
 
+<!-- 吸玉 -->
+<div class="menu">
+<img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35">
+<div class="menu-content">
+<div class="menu-title">吸玉治療</div>
+<div class="menu-desc">
+血流を促進し、老廃物を排出。慢性的なコリや冷えに効果的。
+</div>
+<div class="price">¥1,500</div>
+</div>
+</div>
+
+<!-- テーピング -->
+<div class="menu">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<div class="menu-content">
+<div class="menu-title">テーピング</div>
+<div class="menu-desc">
+関節や筋肉をサポートし、痛みの軽減・再発予防に。
+</div>
+<div class="price">1箇所 ¥500</div>
+</div>
+</div>
+
+</div>
+
+<!-- CTA -->
+<div class="cta">
+<p>ご予約・ご相談はこちら</p>
 <a href="https://lin.ee/TKMd7Z7" class="btn">
-無料で今すぐLINE相談
+LINEで予約する
 </a>
-</section>
-
-<footer>
-<p>© にしむら整骨院</p>
-</footer>
+</div>
 
 <!-- 追従 -->
 <div class="fixed-btn">
 <a href="https://lin.ee/TKMd7Z7">
-無料でLINE相談する
+LINEで予約する
 </a>
 </div>
 
