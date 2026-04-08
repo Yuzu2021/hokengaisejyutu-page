@@ -9,42 +9,78 @@
 body {
   margin: 0;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  background: #f9f9f9;
+  background: linear-gradient(160deg, #fff4f0, #ffe3e0);
+  color: #333;
 }
 
-/* 画像トップ */
+/* ヘッダー */
+header {
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+  background: transparent;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.insta-header {
+  width: 28px;
+}
+
+/* トップ画像 */
 .hero img {
   width: 100%;
   display: block;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 /* タイトル */
 .title {
   text-align: center;
-  padding: 30px 20px 10px;
+  padding: 20px 15px 10px;
 }
 
 .title h1 {
   font-size: 28px;
-  color: #333;
+  margin-bottom: 5px;
+}
+
+.title p {
+  font-size: 16px;
+  color: #666;
 }
 
 /* セクション */
 .section {
-  padding: 30px 20px;
+  padding: 20px 15px;
 }
 
 /* メニュー */
 .menu {
   background: #fff;
   border-radius: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.menu:hover {
+  transform: translateY(-3px);
 }
 
 .menu img {
   width: 100%;
+  display: block;
 }
 
 .menu-content {
@@ -54,7 +90,8 @@ body {
 .menu-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  color: #ff6600;
 }
 
 .menu-desc {
@@ -72,28 +109,34 @@ body {
 /* CTA */
 .cta {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 15px;
 }
 
 .btn {
   display: inline-block;
   background: #ff6600;
   color: #fff;
-  padding: 18px 28px;
+  padding: 16px 28px;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: bold;
   font-size: 18px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 /* 追従ボタン */
 .fixed-btn {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
-  background: #ff6600;
   text-align: center;
-  padding: 15px;
+  padding: 10px 0;
+  background: #ff6600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .fixed-btn a {
@@ -101,101 +144,95 @@ body {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* レスポンシブ */
+@media (min-width: 768px){
+  .menu-content {
+    padding: 20px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- トップ画像 -->
-<div class="hero">
- <header style="justify-content: center; position: relative;">
-  
-  <h1 style="margin:0; font-size:18px;">
-    <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq" 
-       style="color:#fff; text-decoration:none;">
+<!-- ヘッダー -->
+<header>
+  <h1>
+    <a href="https://yuzu2021.github.io/lp-seikotsu-0401page/#faq">
       🏥にしむら整骨院🏥
     </a>
   </h1>
-
-  <!-- Instagramは右固定にする -->
   <a href="https://www.instagram.com/gym_seikotuin" 
-     style="position:absolute; right:15px;">
+     style="position:absolute; right:15px; top:15px;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="insta-header">
   </a>
-<img src="hokengaisejyutu.jpg">
+</header>
+
+<!-- トップ画像 -->
+<div class="hero">
+  <img src="hokengaisejyutu.jpg" alt="保険外治療">
 </div>
 
+<!-- タイトル -->
 <div class="title">
-<h1>保険外治療メニュー</h1>
-<p>症状に合わせて最適な施術をご提案します</p>
+  <h1>保険外治療メニュー</h1>
+  <p>症状に合わせて最適な施術をご提案します</p>
 </div>
 
+<!-- メニュー -->
 <div class="section">
 
-<!-- 超音波 -->
-<div class="menu">
-<img src="tyo.jpg">
-<div class="menu-content">
-<div class="menu-title">超音波治療</div>
-<div class="menu-desc">
-炎症や痛みを早期改善。深部までアプローチし回復を促進します。
-</div>
-<div class="price">1回（7分） ¥700</div>
-</div>
-</div>
+  <div class="menu">
+    <img src="tyo.jpg" alt="超音波治療">
+    <div class="menu-content">
+      <div class="menu-title">超音波治療</div>
+      <div class="menu-desc">炎症や痛みを早期改善。深部までアプローチし回復を促進します。</div>
+      <div class="price">1回（7分） ¥700</div>
+    </div>
+  </div>
 
-<!-- 指圧 -->
-<div class="menu">
-<img src="+15M.jpg">
-<div class="menu-content">
-<div class="menu-title">指圧（15分）</div>
-<div class="menu-desc">
-筋肉のコリや疲労をしっかりほぐし、血流改善・リラックス効果。
-</div>
-<div class="price">¥1,200</div>
-</div>
-</div>
+  <div class="menu">
+    <img src="+15M.jpg" alt="指圧">
+    <div class="menu-content">
+      <div class="menu-title">指圧（15分）</div>
+      <div class="menu-desc">筋肉のコリや疲労をしっかりほぐし、血流改善・リラックス効果。</div>
+      <div class="price">¥1,200</div>
+    </div>
+  </div>
 
-<!-- 吸玉 -->
-<div class="menu">
-<img src="suidama.jpg">
-<div class="menu-content">
-<div class="menu-title">吸玉治療</div>
-<div class="menu-desc">
-血流を促進し、老廃物を排出。慢性的なコリや冷えに効果的。
-</div>
-<div class="price">¥1,500</div>
-</div>
-</div>
+  <div class="menu">
+    <img src="suidama.jpg" alt="吸玉治療">
+    <div class="menu-content">
+      <div class="menu-title">吸玉治療</div>
+      <div class="menu-desc">血流を促進し、老廃物を排出。慢性的なコリや冷えに効果的。</div>
+      <div class="price">¥1,500</div>
+    </div>
+  </div>
 
-<!-- テーピング -->
-<div class="menu">
-<img src="tape.jpg">
-<div class="menu-content">
-<div class="menu-title">テーピング</div>
-<div class="menu-desc">
-関節や筋肉をサポートし、痛みの軽減・再発予防に。
-</div>
-<div class="price">1箇所 ¥500</div>
-</div>
-</div>
+  <div class="menu">
+    <img src="tape.jpg" alt="テーピング">
+    <div class="menu-content">
+      <div class="menu-title">テーピング</div>
+      <div class="menu-desc">関節や筋肉をサポートし、痛みの軽減・再発予防に。</div>
+      <div class="price">1箇所 ¥500</div>
+    </div>
+  </div>
 
 </div>
 
 <!-- CTA -->
 <div class="cta">
-<p>ご予約・ご相談はこちら</p>
-<a href="https://lin.ee/TKMd7Z7" class="btn">
-LINEで予約する
-</a>
+  <p>ご予約・ご相談はこちら</p>
+  <a href="https://lin.ee/TKMd7Z7" class="btn">LINEで予約する</a>
 </div>
 
-<!-- 追従 -->
+<!-- 追従ボタン -->
 <div class="fixed-btn">
-<a href="https://lin.ee/TKMd7Z7">
-LINEで予約する
-</a>
+  <a href="https://lin.ee/TKMd7Z7">LINEで予約する</a>
 </div>
 
 </body>
